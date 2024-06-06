@@ -39,6 +39,11 @@ regd_users.post("/login", (req,res) => {
       return res.status(208).json({message: "Invalid Login! Check username and password"});
 }});
 
+/**
+ * I changed in the database records to be able to test the 2 below APIs with 
+ * ISBN and reviews.
+ */
+
 // Add a book review
 regd_users.put("/auth/review/:isbn", (req, res) => {
   //Write your code here
